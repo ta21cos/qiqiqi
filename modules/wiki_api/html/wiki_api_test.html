@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>first_infovis</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="header">
+
+  </header>
+  <main class="main">
+      <form class="form">
+          <label><input type="radio" name="mode" value="size"> Size</label>
+          <label><input type="radio" name="mode" value="count" checked> Count</label>
+      </form>
+      <div class="content-wrapper clearfix">
+          <div class="sunburst">
+
+          </div>
+          <div class="disc">
+              <h2 class="disc-title">Python</h2>
+              <div class="article">
+                  <h3 class="title">Article TOP 3</h3>
+                  <ul class="ranking">
+                      <li class="item"></li>
+                      <li class="item"></li>
+                      <li class="item"></li>
+                  </ul>
+              </div>
+              <div class="contribute">
+                  <h3 class="title">Contributor TOP 3</h3>
+                  <ul class="ranking">
+                      <li class="item"></li>
+                      <li class="item"></li>
+                      <li class="item"></li>
+                  </ul>
+              </div>
+              <div class="stuck"></div>
+          </div>
+      </div>
+      <div id=container></div>
+  </main>
+</body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="../lib/jquery.xdomainajax.js"></script>
+<script type=text/javascript>
+
+var reqWikiDescription = function(word) {
+  $.ajax({
+    url: 'https://ja.wikipedia.org/w/api.php',
+    type: 'get', // getかpostを指定(デフォルトは前者)
+    dataType: 'jsonp', // 「json」を指定するとresponseがJSONとしてパースされたオブジェクトになる
+    data: { // 送信データを指定(getの場合は自動的にurlの後ろにクエリとして付加される)
+      format : 'json',
+      action : 'query',
+      prop   : 'extracts',
+      exintro: '',
+      explaintext: '',
+      titles : word
+    }
+  })
+  // ・ステータスコードは正常で、dataTypeで定義したようにパース出来たとき
+  .done(function (response) {
+    console.log(response);
+    var query = response.query;
+    if (query && query.pages) {
+      for (var p in query.pages) {
+        var content = query.pages[p].extract;
+        if (content) {
+          console.log(content);
+        } else {
+          console.log("Not found.");
+        }
+        return;
+      }
+    }
+  })
+  // ・サーバからステータスコード400以上が返ってきたとき
+  // ・ステータスコードは正常だが、dataTypeで定義したようにパース出来なかったとき
+  // ・通信に失敗したとき
+  .fail(function () {
+      console.log("failed");
+  });
+}
+
+reqWikiDescription("Ruby");
+
+</script>
+</html>

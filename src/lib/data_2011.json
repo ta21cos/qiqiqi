@@ -1,0 +1,402 @@
+{
+  "colors": {
+    "TypeScript": "#DBDBDB",
+    "Gem": "#DBDBDB",
+    "Java": "#DBDBDB",
+    "C": "#DBDBDB",
+    "CakePHP": "#DBDBDB",
+    "TensorFlow": "#DBDBDB",
+    "vagrant": "#35A7FF",
+    "nginx": "#FFE74C",
+    "Apache": "#35A7FF",
+    "Slack": "#DBDBDB",
+    "gradle": "#DBDBDB",
+    "Heroku": "#DBDBDB",
+    "HTML": "#FFE74C",
+    "ATOM": "#DBDBDB",
+    "PowerShell": "#DBDBDB",
+    "RSpec": "#FFE74C",
+    "SSH": "#DBDBDB",
+    "Haskell": "#DBDBDB",
+    "laravel": "#DBDBDB",
+    "Swift": "#DBDBDB",
+    "CSS3": "#DBDBDB",
+    "jQuery": "#FFE74C",
+    "homebrew": "#DBDBDB",
+    "VisualStudio": "#DBDBDB",
+    "TechEnglish": "#DBDBDB",
+    "iPhone": "#DBDBDB",
+    "\u6a5f\u68b0\u5b66\u7fd2": "#DBDBDB",
+    "Elixir": "#DBDBDB",
+    "C++": "#DBDBDB",
+    "npm": "#DBDBDB",
+    "C#": "#DBDBDB",
+    "DeepLearning": "#DBDBDB",
+    "Bash": "#DBDBDB",
+    "WordPress": "#DBDBDB",
+    "aws-cli": "#DBDBDB",
+    "Objective-C": "#DBDBDB",
+    "OSX": "#DBDBDB",
+    "S3": "#DBDBDB",
+    "Jenkins": "#DBDBDB",
+    "JavaScript": "#FFE74C",
+    "RaspberryPi": "#DBDBDB",
+    "Xcode": "#DBDBDB",
+    "Emacs": "#DBDBDB",
+    "Twitter": "#DBDBDB",
+    "AWS": "#35A7FF",
+    "Markdown": "#DBDBDB",
+    "Ruby": "#FFE74C",
+    "Go": "#DBDBDB",
+    "R": "#DBDBDB",
+    "VirtualBox": "#DBDBDB",
+    "AdventCalendar": "#DBDBDB",
+    "gulp": "#DBDBDB",
+    "HTML5": "#DBDBDB",
+    "Elasticsearch": "#DBDBDB",
+    "Ansible": "#DBDBDB",
+    "Chrome": "#DBDBDB",
+    "\u521d\u5fc3\u8005": "#DBDBDB",
+    "RubyOnRails": "#DBDBDB",
+    "lambda": "#DBDBDB",
+    "Qiita": "#DBDBDB",
+    "Python": "#6BF178",
+    "Android": "#FF5964",
+    "EC2": "#DBDBDB",
+    "Linux": "#35A7FF",
+    "Scala": "#DBDBDB",
+    "fluentd": "#DBDBDB",
+    "golang": "#DBDBDB",
+    "CSS": "#DBDBDB",
+    "Vim": "#FFE74C",
+    "reactjs": "#DBDBDB",
+    "Rails": "#FFE74C",
+    "Mac": "#DBDBDB",
+    "Eclipse": "#DBDBDB",
+    "Azure": "#DBDBDB",
+    "PostgreSQL": "#DBDBDB",
+    "Ubuntu": "#DBDBDB",
+    "chef": "#DBDBDB",
+    "MachineLearning": "#6BF178",
+    "python3": "#DBDBDB",
+    "Node.js": "#FFE74C",
+    "ShellScript": "#FFE74C",
+    "Excel": "#DBDBDB",
+    "GitHub": "#DBDBDB",
+    "SQL": "#DBDBDB",
+    "PHP": "#FFE74C",
+    "docker": "#DBDBDB",
+    "\u65b0\u4eba\u30d7\u30ed\u30b0\u30e9\u30de\u5fdc\u63f4": "#DBDBDB",
+    "MacOSX": "#DBDBDB",
+    "\u3069\u3046\u66f8\u304f": "#DBDBDB",
+    "AndroidStudio": "#DBDBDB",
+    "Rails4": "#DBDBDB",
+    "Perl": "#DBDBDB",
+    "CentOS": "#DBDBDB",
+    "JSON": "#DBDBDB",
+    "Zsh": "#35A7FF",
+    "Django": "#DBDBDB",
+    "Git": "#DBDBDB",
+    "oracle": "#DBDBDB",
+    "cocos2d-x": "#DBDBDB",
+    "MySQL": "#DBDBDB",
+    "api": "#DBDBDB",
+    "Arduino": "#DBDBDB",
+    "shell": "#DBDBDB",
+    "IoT": "#DBDBDB",
+    "Windows": "#DBDBDB",
+    "CoffeeScript": "#DBDBDB",
+    "MongoDB": "#FFE74C",
+    "centos7": "#DBDBDB",
+    "iOS": "#FF5964",
+    "Unity": "#DBDBDB",
+    "Unity3D": "#DBDBDB",
+    "AngularJS": "#DBDBDB",
+    "OpenCV": "#DBDBDB",
+    "bootstrap": "#DBDBDB"
+  },
+  "nodes": [
+    {
+      "group": 0,
+      "id": "nginx",
+      "value": 1
+    },
+    {
+      "group": 0,
+      "id": "Apache",
+      "value": 1
+    },
+    {
+      "group": 0,
+      "id": "HTML",
+      "value": 4
+    },
+    {
+      "group": 0,
+      "id": "RSpec",
+      "value": 2
+    },
+    {
+      "group": 0,
+      "id": "Zsh",
+      "value": 13
+    },
+    {
+      "group": 0,
+      "id": "C++",
+      "value": 1
+    },
+    {
+      "group": 0,
+      "id": "Bash",
+      "value": 7
+    },
+    {
+      "group": 0,
+      "id": "Node.js",
+      "value": 1
+    },
+    {
+      "group": 0,
+      "id": "JavaScript",
+      "value": 28
+    },
+    {
+      "group": 0,
+      "id": "Emacs",
+      "value": 7
+    },
+    {
+      "group": 0,
+      "id": "Ruby",
+      "value": 44
+    },
+    {
+      "group": 0,
+      "id": "jQuery",
+      "value": 1
+    },
+    {
+      "group": 0,
+      "id": "C",
+      "value": 9
+    },
+    {
+      "group": 0,
+      "id": "PHP",
+      "value": 32
+    },
+    {
+      "group": 0,
+      "id": "Vim",
+      "value": 8
+    },
+    {
+      "group": 0,
+      "id": "Rails",
+      "value": 30
+    },
+    {
+      "group": 0,
+      "id": "Mac",
+      "value": 8
+    },
+    {
+      "group": 0,
+      "id": "ShellScript",
+      "value": 9
+    },
+    {
+      "group": 0,
+      "id": "Linux",
+      "value": 8
+    },
+    {
+      "group": 0,
+      "id": "MacOSX",
+      "value": 1
+    },
+    {
+      "group": 0,
+      "id": "Git",
+      "value": 9
+    },
+    {
+      "group": 0,
+      "id": "MySQL",
+      "value": 2
+    },
+    {
+      "group": 0,
+      "id": "Windows",
+      "value": 1
+    },
+    {
+      "group": 0,
+      "id": "MongoDB",
+      "value": 1
+    },
+    {
+      "group": 0,
+      "id": "Python",
+      "value": 20
+    }
+  ],
+  "links": [
+    {
+      "source": "Ruby",
+      "target": "JavaScript",
+      "value": 2.0
+    },
+    {
+      "source": "Ruby",
+      "target": "Python",
+      "value": 1.0
+    },
+    {
+      "source": "Ruby",
+      "target": "Rails",
+      "value": 7.0
+    },
+    {
+      "source": "Ruby",
+      "target": "Node.js",
+      "value": 1.0
+    },
+    {
+      "source": "Ruby",
+      "target": "Vim",
+      "value": 1.0
+    },
+    {
+      "source": "Ruby",
+      "target": "RSpec",
+      "value": 2.0
+    },
+    {
+      "source": "Ruby",
+      "target": "MongoDB",
+      "value": 1.0
+    },
+    {
+      "source": "JavaScript",
+      "target": "Python",
+      "value": 1.0
+    },
+    {
+      "source": "JavaScript",
+      "target": "Node.js",
+      "value": 1.0
+    },
+    {
+      "source": "JavaScript",
+      "target": "jQuery",
+      "value": 1.0
+    },
+    {
+      "source": "JavaScript",
+      "target": "HTML",
+      "value": 1.0
+    },
+    {
+      "source": "PHP",
+      "target": "Linux",
+      "value": 1.0
+    },
+    {
+      "source": "PHP",
+      "target": "ShellScript",
+      "value": 1.0
+    },
+    {
+      "source": "PHP",
+      "target": "nginx",
+      "value": 1.0
+    },
+    {
+      "source": "Linux",
+      "target": "nginx",
+      "value": 1.0
+    },
+    {
+      "source": "Linux",
+      "target": "Apache",
+      "value": 1.0
+    },
+    {
+      "source": "Linux",
+      "target": "Zsh",
+      "value": 2.0
+    },
+    {
+      "source": "Git",
+      "target": "Zsh",
+      "value": 1.0
+    },
+    {
+      "source": "Mac",
+      "target": "MySQL",
+      "value": 1.0
+    },
+    {
+      "source": "Mac",
+      "target": "Bash",
+      "value": 1.0
+    },
+    {
+      "source": "Mac",
+      "target": "MacOSX",
+      "value": 1.0
+    },
+    {
+      "source": "Mac",
+      "target": "Emacs",
+      "value": 1.0
+    },
+    {
+      "source": "C++",
+      "target": "Windows",
+      "value": 1.0
+    },
+    {
+      "source": "C++",
+      "target": "C",
+      "value": 1.0
+    },
+    {
+      "source": "Windows",
+      "target": "C",
+      "value": 1.0
+    },
+    {
+      "source": "Vim",
+      "target": "Bash",
+      "value": 1.0
+    },
+    {
+      "source": "Vim",
+      "target": "ShellScript",
+      "value": 1.0
+    },
+    {
+      "source": "Vim",
+      "target": "Zsh",
+      "value": 1.0
+    },
+    {
+      "source": "Bash",
+      "target": "ShellScript",
+      "value": 2.0
+    },
+    {
+      "source": "Bash",
+      "target": "Zsh",
+      "value": 5.0
+    },
+    {
+      "source": "ShellScript",
+      "target": "Zsh",
+      "value": 3.0
+    }
+  ]
+}

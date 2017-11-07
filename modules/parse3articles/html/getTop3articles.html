@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>first_infovis</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="header">
+
+  </header>
+  <main class="main">
+      <form class="form">
+          <label><input type="radio" name="mode" value="size"> Size</label>
+          <label><input type="radio" name="mode" value="count" checked> Count</label>
+      </form>
+      <div class="content-wrapper clearfix">
+          <div class="sunburst">
+
+          </div>
+          <div class="disc">
+              <h2 class="disc-title">Python</h2>
+              <div class="article">
+                  <h3 class="title">Article TOP 3</h3>
+                  <ul class="ranking">
+                      <li class="item"></li>
+                      <li class="item"></li>
+                      <li class="item"></li>
+                  </ul>
+              </div>
+              <div class="contribute">
+                  <h3 class="title">Contributor TOP 3</h3>
+                  <ul class="ranking">
+                      <li class="item"></li>
+                      <li class="item"></li>
+                      <li class="item"></li>
+                  </ul>
+              </div>
+              <div class="stuck"></div>
+          </div>
+      </div>
+      <div id=container></div>
+  </main>
+</body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="../lib/jquery.xdomainajax.js"></script>
+<script type=text/javascript>
+
+$(function() {
+  $.ajax({
+    url: 'http://qiita.com/tags/Python',
+    type: 'GET',
+    success: function(data) {
+      var out_html = $($.parseHTML(data.responseText));
+      out_html.find('.tagShowTopList_targetName a').each(function(i) {
+        if (i < 3) {
+          $('.disc .contribute .ranking li').eq(i).html("<a href=https://qiita.com/"+this.text+">"+this.text+"</a>");
+        }
+      })
+    }
+  });
+});
+
+</script>
+</html>

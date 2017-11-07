@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+/*##############################*/
+/*html*/
+/*##############################*/
+
+html {
+    font-size: 62.5%;
+}
+
+/*##############################*/
+/* common */
+/*##############################*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+path {
+    stroke: #fff;
+    fill-rule: evenodd;
+}
+
+/*##############################*/
+/* sunburst */
+/*##############################*/
+
+body {
+    padding: 30px;
+    background-color: #F2F2F2;
+    color: #333;
+    text-align: left;
+    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+/*##############################*/
+/* sunburst */
+/*##############################*/
+
+.sunburst {
+    width: 60%;
+    float: left;
+}
+
+/*##############################*/
+/* disc */
+/*##############################*/
+
+.disc {
+    width: 40%;
+    float: right;
+    padding: 32px;
+    background-color: #e5e5e5;
+}
+.disc .disc-title {
+    padding: 8px;
+    font-size: 4.0rem;
+    text-align: center;
+}
+.disc .title {
+    padding: 16px 8px 8px 8px;
+}
+
+.disc li {
+    position: relative;
+    width: 100%;
+    padding: 8px 8px 8px 32px;
+    margin-bottom: 8px;
+    background-color: #F2F2F2;
+    border-radius: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.disc li:first-child::before,
+.disc li:nth-child(2)::before,
+.disc li:nth-child(3)::before {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-bottom: 10px solid #fb0;
+    content: "";
+}
+.disc li:first-child::after,
+.disc li:nth-child(2)::after,
+.disc li:nth-child(3)::after {
+    position: absolute;
+    top: 17px;
+    left: 5px;
+    width: 0;
+    height: 0;
+    border: 6px solid #fb0;
+    border-top: 3px solid transparent;
+    border-bottom: 6px solid #f90;
+    content: "";
+}
+
+.disc li:nth-child(2)::before {
+    border-bottom: 10px solid #ccc;
+}
+.disc li:nth-child(2)::after {
+    border: 6px solid #ccc;
+    border-top: 3px solid transparent;
+    border-bottom: 6px solid #aaa;
+}
+
+.disc li:nth-child(3)::before {
+    borde-bottom: 10px solid #d98;
+}
+.disc li:nth-child(3)::after{
+    border: 6px solid #d98;
+    border-top: 3px solid transparent;
+    border-bottom: 6px solid #c76;
+}
+
+/*##############################*/
+/* form */
+/*##############################*/
+
+.form {
+    display: block;
+    padding: 20px;
+}
+
+/*##############################*/
+/* author-modalwin */
+/*##############################*/
+
+.author-modalwin {
+    width: 60%;
+    margin: auto;
+    padding: 32px;
+    text-align: center;
+    background-color: #e5e5e5;
+}
+
+.author-modalwin .image {
+    float: left;
+}
+.author-modalwin .title {
+    float: left;
+}
+.author-modalwin .article-list {
+    text-align: left;
+}
+.author-modalwin .article {
+    position: relative;
+    width: 100%;
+    padding: 8px 16px;
+    margin-bottom: 8px;
+    background-color: #F2F2F2;
+    border-radius: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    list-style: none;
+}

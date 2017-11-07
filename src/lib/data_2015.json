@@ -1,0 +1,1142 @@
+{
+  "nodes": [
+    {
+      "value": 140,
+      "group": 0,
+      "id": "python3"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "SQL"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "Azure"
+    },
+    {
+      "value": 815,
+      "group": 0,
+      "id": "jQuery"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "C++"
+    },
+    {
+      "value": 345,
+      "group": 0,
+      "id": "homebrew"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "Twitter"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "C"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "Elasticsearch"
+    },
+    {
+      "value": 235,
+      "group": 0,
+      "id": "gulp"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "TypeScript"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "PowerShell"
+    },
+    {
+      "value": 957,
+      "group": 0,
+      "id": "Vim"
+    },
+    {
+      "value": 311,
+      "group": 0,
+      "id": "\u6a5f\u68b0\u5b66\u7fd2"
+    },
+    {
+      "value": 659,
+      "group": 0,
+      "id": "ShellScript"
+    },
+    {
+      "value": 187,
+      "group": 0,
+      "id": "IoT"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "R"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "Windows"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "Arduino"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "Markdown"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "RubyOnRails"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "Slack"
+    },
+    {
+      "value": 2795,
+      "group": 0,
+      "id": "Python"
+    },
+    {
+      "value": 490,
+      "group": 0,
+      "id": "OSX"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "\u65b0\u4eba\u30d7\u30ed\u30b0\u30e9\u30de\u5fdc\u63f4"
+    },
+    {
+      "value": 353,
+      "group": 0,
+      "id": "Chrome"
+    },
+    {
+      "value": 537,
+      "group": 0,
+      "id": "Heroku"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "JSON"
+    },
+    {
+      "value": 195,
+      "group": 0,
+      "id": "gradle"
+    },
+    {
+      "value": 1938,
+      "group": 0,
+      "id": "Swift"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "Jenkins"
+    },
+    {
+      "value": 224,
+      "group": 0,
+      "id": "Unity3D"
+    },
+    {
+      "value": 318,
+      "group": 0,
+      "id": "AdventCalendar"
+    },
+    {
+      "value": 854,
+      "group": 0,
+      "id": "Bash"
+    },
+    {
+      "value": 289,
+      "group": 0,
+      "id": "AndroidStudio"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "laravel"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "OpenCV"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "Perl"
+    },
+    {
+      "value": 387,
+      "group": 0,
+      "id": "RSpec"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "cocos2d-x"
+    },
+    {
+      "value": 400,
+      "group": 0,
+      "id": "golang"
+    },
+    {
+      "value": 138,
+      "group": 0,
+      "id": "lambda"
+    },
+    {
+      "value": 1480,
+      "group": 0,
+      "id": "Node.js"
+    },
+    {
+      "value": 701,
+      "group": 0,
+      "id": "iPhone"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "Ansible"
+    },
+    {
+      "value": 412,
+      "group": 0,
+      "id": "chef"
+    },
+    {
+      "value": 1832,
+      "group": 0,
+      "id": "Git"
+    },
+    {
+      "value": 494,
+      "group": 0,
+      "id": "Zsh"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "Qiita"
+    },
+    {
+      "value": 2010,
+      "group": 0,
+      "id": "Linux"
+    },
+    {
+      "value": 510,
+      "group": 0,
+      "id": "HTML5"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "TensorFlow"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "VisualStudio"
+    },
+    {
+      "value": 3594,
+      "group": 0,
+      "id": "Rails"
+    },
+    {
+      "value": 545,
+      "group": 0,
+      "id": "AngularJS"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "DeepLearning"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "TechEnglish"
+    },
+    {
+      "value": 277,
+      "group": 0,
+      "id": "reactjs"
+    },
+    {
+      "value": 1089,
+      "group": 0,
+      "id": "CentOS"
+    },
+    {
+      "value": 4983,
+      "group": 0,
+      "id": "JavaScript"
+    },
+    {
+      "value": 1097,
+      "group": 0,
+      "id": "MySQL"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "RaspberryPi"
+    },
+    {
+      "value": 359,
+      "group": 0,
+      "id": "CakePHP"
+    },
+    {
+      "value": 865,
+      "group": 0,
+      "id": "Scala"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "Emacs"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "oracle"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "PostgreSQL"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "Eclipse"
+    },
+    {
+      "value": 2027,
+      "group": 0,
+      "id": "Java"
+    },
+    {
+      "value": 1721,
+      "group": 0,
+      "id": "Objective-C"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "api"
+    },
+    {
+      "value": 508,
+      "group": 0,
+      "id": "\u3069\u3046\u66f8\u304f"
+    },
+    {
+      "value": 691,
+      "group": 0,
+      "id": "HTML"
+    },
+    {
+      "value": 901,
+      "group": 0,
+      "id": "Ubuntu"
+    },
+    {
+      "value": 869,
+      "group": 0,
+      "id": "C#"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "WordPress"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "Rails4"
+    },
+    {
+      "value": 244,
+      "group": 0,
+      "id": "aws-cli"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "SSH"
+    },
+    {
+      "value": 752,
+      "group": 0,
+      "id": "GitHub"
+    },
+    {
+      "value": 471,
+      "group": 0,
+      "id": "Haskell"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "fluentd"
+    },
+    {
+      "value": 164,
+      "group": 0,
+      "id": "MachineLearning"
+    },
+    {
+      "value": 1527,
+      "group": 0,
+      "id": "Mac"
+    },
+    {
+      "value": 247,
+      "group": 0,
+      "id": "Gem"
+    },
+    {
+      "value": 1206,
+      "group": 0,
+      "id": "docker"
+    },
+    {
+      "value": 1155,
+      "group": 0,
+      "id": "Xcode"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "bootstrap"
+    },
+    {
+      "value": 320,
+      "group": 0,
+      "id": "VirtualBox"
+    },
+    {
+      "value": 221,
+      "group": 0,
+      "id": "CSS3"
+    },
+    {
+      "value": 318,
+      "group": 0,
+      "id": "shell"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "\u521d\u5fc3\u8005"
+    },
+    {
+      "value": 3332,
+      "group": 0,
+      "id": "PHP"
+    },
+    {
+      "value": 183,
+      "group": 0,
+      "id": "npm"
+    },
+    {
+      "value": 5900,
+      "group": 0,
+      "id": "Ruby"
+    },
+    {
+      "value": 180,
+      "group": 0,
+      "id": "S3"
+    },
+    {
+      "value": 2505,
+      "group": 0,
+      "id": "Android"
+    },
+    {
+      "value": 620,
+      "group": 0,
+      "id": "CoffeeScript"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "Django"
+    },
+    {
+      "value": 411,
+      "group": 0,
+      "id": "Apache"
+    },
+    {
+      "value": 797,
+      "group": 0,
+      "id": "CSS"
+    },
+    {
+      "value": 3303,
+      "group": 0,
+      "id": "iOS"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "centos7"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "nginx"
+    },
+    {
+      "value": 684,
+      "group": 0,
+      "id": "MacOSX"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "MongoDB"
+    },
+    {
+      "value": 1021,
+      "group": 0,
+      "id": "Go"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "Elixir"
+    },
+    {
+      "value": 931,
+      "group": 0,
+      "id": "vagrant"
+    },
+    {
+      "value": 273,
+      "group": 0,
+      "id": "EC2"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "Excel"
+    },
+    {
+      "value": 0,
+      "group": 0,
+      "id": "ATOM"
+    },
+    {
+      "value": 1544,
+      "group": 0,
+      "id": "AWS"
+    },
+    {
+      "value": 764,
+      "group": 0,
+      "id": "Unity"
+    }
+  ],
+  "links": [
+    {
+      "source": "Ruby",
+      "value": 46.0,
+      "target": "JavaScript"
+    },
+    {
+      "source": "Ruby",
+      "value": 29.0,
+      "target": "Python"
+    },
+    {
+      "source": "Ruby",
+      "value": 386.0,
+      "target": "Rails"
+    },
+    {
+      "source": "Ruby",
+      "value": 22.0,
+      "target": "AWS"
+    },
+    {
+      "source": "Ruby",
+      "value": 24.0,
+      "target": "GitHub"
+    },
+    {
+      "source": "Ruby",
+      "value": 37.0,
+      "target": "Heroku"
+    },
+    {
+      "source": "Ruby",
+      "value": 38.0,
+      "target": "chef"
+    },
+    {
+      "source": "Ruby",
+      "value": 65.0,
+      "target": "RSpec"
+    },
+    {
+      "source": "Ruby",
+      "value": 46.0,
+      "target": "\u3069\u3046\u66f8\u304f"
+    },
+    {
+      "source": "Ruby",
+      "value": 50.0,
+      "target": "Gem"
+    },
+    {
+      "source": "JavaScript",
+      "value": 22.0,
+      "target": "Python"
+    },
+    {
+      "source": "JavaScript",
+      "value": 23.0,
+      "target": "PHP"
+    },
+    {
+      "source": "JavaScript",
+      "value": 25.0,
+      "target": "Rails"
+    },
+    {
+      "source": "JavaScript",
+      "value": 176.0,
+      "target": "Node.js"
+    },
+    {
+      "source": "JavaScript",
+      "value": 52.0,
+      "target": "CSS"
+    },
+    {
+      "source": "JavaScript",
+      "value": 86.0,
+      "target": "jQuery"
+    },
+    {
+      "source": "JavaScript",
+      "value": 90.0,
+      "target": "HTML"
+    },
+    {
+      "source": "JavaScript",
+      "value": 79.0,
+      "target": "HTML5"
+    },
+    {
+      "source": "JavaScript",
+      "value": 130.0,
+      "target": "AngularJS"
+    },
+    {
+      "source": "JavaScript",
+      "value": 65.0,
+      "target": "CoffeeScript"
+    },
+    {
+      "source": "JavaScript",
+      "value": 40.0,
+      "target": "reactjs"
+    },
+    {
+      "source": "JavaScript",
+      "value": 38.0,
+      "target": "Chrome"
+    },
+    {
+      "source": "JavaScript",
+      "value": 24.0,
+      "target": "gulp"
+    },
+    {
+      "source": "Python",
+      "value": 81.0,
+      "target": "\u6a5f\u68b0\u5b66\u7fd2"
+    },
+    {
+      "source": "Python",
+      "value": 24.0,
+      "target": "python3"
+    },
+    {
+      "source": "Python",
+      "value": 51.0,
+      "target": "MachineLearning"
+    },
+    {
+      "source": "iOS",
+      "value": 65.0,
+      "target": "Android"
+    },
+    {
+      "source": "iOS",
+      "value": 232.0,
+      "target": "Swift"
+    },
+    {
+      "source": "iOS",
+      "value": 25.0,
+      "target": "Mac"
+    },
+    {
+      "source": "iOS",
+      "value": 499.0,
+      "target": "Objective-C"
+    },
+    {
+      "source": "iOS",
+      "value": 245.0,
+      "target": "Xcode"
+    },
+    {
+      "source": "iOS",
+      "value": 247.0,
+      "target": "iPhone"
+    },
+    {
+      "source": "iOS",
+      "value": 25.0,
+      "target": "IoT"
+    },
+    {
+      "source": "PHP",
+      "value": 35.0,
+      "target": "MySQL"
+    },
+    {
+      "source": "PHP",
+      "value": 23.0,
+      "target": "Apache"
+    },
+    {
+      "source": "PHP",
+      "value": 21.0,
+      "target": "CakePHP"
+    },
+    {
+      "source": "PHP",
+      "value": 43.0,
+      "target": "\u3069\u3046\u66f8\u304f"
+    },
+    {
+      "source": "Rails",
+      "value": 40.0,
+      "target": "Heroku"
+    },
+    {
+      "source": "Rails",
+      "value": 48.0,
+      "target": "RSpec"
+    },
+    {
+      "source": "Rails",
+      "value": 28.0,
+      "target": "Gem"
+    },
+    {
+      "source": "Android",
+      "value": 95.0,
+      "target": "Java"
+    },
+    {
+      "source": "Android",
+      "value": 57.0,
+      "target": "AndroidStudio"
+    },
+    {
+      "source": "Android",
+      "value": 34.0,
+      "target": "gradle"
+    },
+    {
+      "source": "Swift",
+      "value": 69.0,
+      "target": "Objective-C"
+    },
+    {
+      "source": "Swift",
+      "value": 117.0,
+      "target": "Xcode"
+    },
+    {
+      "source": "Swift",
+      "value": 47.0,
+      "target": "iPhone"
+    },
+    {
+      "source": "Java",
+      "value": 36.0,
+      "target": "Scala"
+    },
+    {
+      "source": "Java",
+      "value": 27.0,
+      "target": "gradle"
+    },
+    {
+      "source": "Linux",
+      "value": 42.0,
+      "target": "Mac"
+    },
+    {
+      "source": "Linux",
+      "value": 20.0,
+      "target": "CentOS"
+    },
+    {
+      "source": "Linux",
+      "value": 36.0,
+      "target": "Ubuntu"
+    },
+    {
+      "source": "Linux",
+      "value": 34.0,
+      "target": "Bash"
+    },
+    {
+      "source": "Linux",
+      "value": 22.0,
+      "target": "ShellScript"
+    },
+    {
+      "source": "AWS",
+      "value": 36.0,
+      "target": "EC2"
+    },
+    {
+      "source": "AWS",
+      "value": 38.0,
+      "target": "lambda"
+    },
+    {
+      "source": "AWS",
+      "value": 147.0,
+      "target": "aws-cli"
+    },
+    {
+      "source": "AWS",
+      "value": 29.0,
+      "target": "S3"
+    },
+    {
+      "source": "Git",
+      "value": 115.0,
+      "target": "GitHub"
+    },
+    {
+      "source": "Mac",
+      "value": 31.0,
+      "target": "Objective-C"
+    },
+    {
+      "source": "Mac",
+      "value": 24.0,
+      "target": "Xcode"
+    },
+    {
+      "source": "Mac",
+      "value": 31.0,
+      "target": "Vim"
+    },
+    {
+      "source": "Mac",
+      "value": 21.0,
+      "target": "Bash"
+    },
+    {
+      "source": "Mac",
+      "value": 37.0,
+      "target": "MacOSX"
+    },
+    {
+      "source": "Mac",
+      "value": 20.0,
+      "target": "OSX"
+    },
+    {
+      "source": "Mac",
+      "value": 39.0,
+      "target": "Zsh"
+    },
+    {
+      "source": "Mac",
+      "value": 30.0,
+      "target": "homebrew"
+    },
+    {
+      "source": "Node.js",
+      "value": 41.0,
+      "target": "npm"
+    },
+    {
+      "source": "docker",
+      "value": 24.0,
+      "target": "vagrant"
+    },
+    {
+      "source": "Objective-C",
+      "value": 132.0,
+      "target": "Xcode"
+    },
+    {
+      "source": "Objective-C",
+      "value": 192.0,
+      "target": "iPhone"
+    },
+    {
+      "source": "Xcode",
+      "value": 86.0,
+      "target": "iPhone"
+    },
+    {
+      "source": "C#",
+      "value": 55.0,
+      "target": "Unity"
+    },
+    {
+      "source": "C#",
+      "value": 36.0,
+      "target": "Unity3D"
+    },
+    {
+      "source": "Unity",
+      "value": 64.0,
+      "target": "Unity3D"
+    },
+    {
+      "source": "CSS",
+      "value": 83.0,
+      "target": "HTML"
+    },
+    {
+      "source": "CSS",
+      "value": 29.0,
+      "target": "HTML5"
+    },
+    {
+      "source": "CSS",
+      "value": 81.0,
+      "target": "CSS3"
+    },
+    {
+      "source": "vagrant",
+      "value": 29.0,
+      "target": "VirtualBox"
+    },
+    {
+      "source": "Go",
+      "value": 95.0,
+      "target": "golang"
+    },
+    {
+      "source": "Vim",
+      "value": 26.0,
+      "target": "Zsh"
+    },
+    {
+      "source": "HTML",
+      "value": 32.0,
+      "target": "HTML5"
+    },
+    {
+      "source": "HTML",
+      "value": 21.0,
+      "target": "CSS3"
+    },
+    {
+      "source": "Bash",
+      "value": 80.0,
+      "target": "ShellScript"
+    },
+    {
+      "source": "Bash",
+      "value": 47.0,
+      "target": "Zsh"
+    },
+    {
+      "source": "ShellScript",
+      "value": 40.0,
+      "target": "Zsh"
+    },
+    {
+      "source": "ShellScript",
+      "value": 25.0,
+      "target": "shell"
+    },
+    {
+      "source": "\u6a5f\u68b0\u5b66\u7fd2",
+      "value": 66.0,
+      "target": "MachineLearning"
+    },
+    {
+      "source": "Haskell",
+      "value": 30.0,
+      "target": "\u3069\u3046\u66f8\u304f"
+    },
+    {
+      "source": "Haskell",
+      "value": 26.0,
+      "target": "AdventCalendar"
+    },
+    {
+      "source": "\u3069\u3046\u66f8\u304f",
+      "value": 25.0,
+      "target": "AdventCalendar"
+    }
+  ],
+  "colors": {
+    "python3": "#6BF178",
+    "SQL": "#DBDBDB",
+    "shell": "#DBDBDB",
+    "jQuery": "#FFE74C",
+    "C++": "#DBDBDB",
+    "homebrew": "#DBDBDB",
+    "C": "#DBDBDB",
+    "Elasticsearch": "#DBDBDB",
+    "gulp": "#FFE74C",
+    "TypeScript": "#DBDBDB",
+    "PowerShell": "#DBDBDB",
+    "Vim": "#DBDBDB",
+    "vagrant": "#35A7FF",
+    "ShellScript": "#35A7FF",
+    "CSS3": "#FFE74C",
+    "IoT": "#FF5964",
+    "R": "#DBDBDB",
+    "Windows": "#DBDBDB",
+    "Arduino": "#DBDBDB",
+    "Markdown": "#DBDBDB",
+    "Slack": "#DBDBDB",
+    "OSX": "#DBDBDB",
+    "\u65b0\u4eba\u30d7\u30ed\u30b0\u30e9\u30de\u5fdc\u63f4": "#DBDBDB",
+    "Chrome": "#FFE74C",
+    "Heroku": "#FFE74C",
+    "Scala": "#DBDBDB",
+    "Node.js": "#FFE74C",
+    "gradle": "#FF5964",
+    "Swift": "#FF5964",
+    "Emacs": "#DBDBDB",
+    "Unity3D": "#DBDBDB",
+    "CSS": "#FFE74C",
+    "AdventCalendar": "#DBDBDB",
+    "Bash": "#35A7FF",
+    "AndroidStudio": "#FF5964",
+    "laravel": "#DBDBDB",
+    "centos7": "#DBDBDB",
+    "Perl": "#DBDBDB",
+    "RSpec": "#FFE74C",
+    "cocos2d-x": "#DBDBDB",
+    "golang": "#DBDBDB",
+    "lambda": "#35A7FF",
+    "\u6a5f\u68b0\u5b66\u7fd2": "#6BF178",
+    "iPhone": "#FF5964",
+    "Ansible": "#DBDBDB",
+    "chef": "#FFE74C",
+    "Git": "#DBDBDB",
+    "Zsh": "#DBDBDB",
+    "Qiita": "#DBDBDB",
+    "Linux": "#35A7FF",
+    "HTML5": "#FFE74C",
+    "TensorFlow": "#DBDBDB",
+    "Rails": "#FFE74C",
+    "AngularJS": "#FFE74C",
+    "DeepLearning": "#DBDBDB",
+    "TechEnglish": "#DBDBDB",
+    "reactjs": "#FFE74C",
+    "CentOS": "#35A7FF",
+    "JavaScript": "#FFE74C",
+    "MySQL": "#FFE74C",
+    "RaspberryPi": "#DBDBDB",
+    "CakePHP": "#FFE74C",
+    "JSON": "#DBDBDB",
+    "Jenkins": "#DBDBDB",
+    "PostgreSQL": "#DBDBDB",
+    "Eclipse": "#DBDBDB",
+    "Java": "#FF5964",
+    "VirtualBox": "#35A7FF",
+    "api": "#DBDBDB",
+    "oracle": "#DBDBDB",
+    "HTML": "#FFE74C",
+    "Ubuntu": "#35A7FF",
+    "C#": "#DBDBDB",
+    "WordPress": "#DBDBDB",
+    "Rails4": "#DBDBDB",
+    "SSH": "#DBDBDB",
+    "GitHub": "#FFE74C",
+    "Haskell": "#DBDBDB",
+    "MachineLearning": "#6BF178",
+    "Mac": "#35A7FF",
+    "Gem": "#FFE74C",
+    "docker": "#35A7FF",
+    "Xcode": "#FF5964",
+    "bootstrap": "#DBDBDB",
+    "Objective-C": "#FF5964",
+    "fluentd": "#DBDBDB",
+    "Azure": "#DBDBDB",
+    "\u521d\u5fc3\u8005": "#DBDBDB",
+    "PHP": "#FFE74C",
+    "npm": "#DBDBDB",
+    "MacOSX": "#DBDBDB",
+    "Ruby": "#FFE74C",
+    "S3": "#35A7FF",
+    "Twitter": "#DBDBDB",
+    "CoffeeScript": "#FFE74C",
+    "Django": "#DBDBDB",
+    "ATOM": "#DBDBDB",
+    "Apache": "#FFE74C",
+    "aws-cli": "#35A7FF",
+    "iOS": "#FF5964",
+    "OpenCV": "#DBDBDB",
+    "nginx": "#DBDBDB",
+    "VisualStudio": "#DBDBDB",
+    "MongoDB": "#DBDBDB",
+    "Go": "#DBDBDB",
+    "Elixir": "#DBDBDB",
+    "RubyOnRails": "#DBDBDB",
+    "\u3069\u3046\u66f8\u304f": "#FFE74C",
+    "EC2": "#35A7FF",
+    "Excel": "#DBDBDB",
+    "Android": "#FF5964",
+    "Python": "#6BF178",
+    "AWS": "#35A7FF",
+    "Unity": "#DBDBDB"
+  }
+}

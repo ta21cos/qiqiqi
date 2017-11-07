@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>first_infovis</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body id="body">
+  <div class="hide text-box">
+      <h2 class="title"></h2>
+      <div class="disc-lang"></div>
+  </div>
+  <header class="header">
+
+  </header>
+  <main class="main">
+      <div class="graph">
+          <svg></svg>
+          <ul class="legend-list">
+              <li><span class="sikaku-1"></span><span class="legend">WEB</span></li>
+              <li><span class="sikaku-2"></span><span class="legend">iOS / Android</span></li>
+              <li><span class="sikaku-3"></span><span class="legend">Machine Learning</span></li>
+              <li><span class="sikaku-4"></span><span class="legend">Server</span></li>
+              <li><span class="sikaku-5"></span><span class="legend">etc</span></li>
+          </ul>
+          <p class="year">
+            <a href="javascript:void(0);" onclick="OnLeftClick();">
+              <i class="fa fa-caret-left" aria-hidden="true"></i>
+            </a> 2016 
+            <a href="javascript:void(0);" onclick="OnRightClick();">
+              <i class="fa fa-caret-right hide_arrow" aria-hidden="true"></i>
+            </a>
+          </p>
+      </div>
+  </main>
+  <section id="modal-one" class="modal">
+      <div class="modal-inner">
+          <div class="disc">
+              <h2 class="disc-title">Python</h2>
+              <div class="contribute">
+                  <h3 class="title">Contributor TOP 3</h3>
+                  <ul class="ranking">
+                      <li class="item">
+                          <div class="contributer clearfix">
+                              <a href="#" class="name">aahaminiku</a>
+                          </div>
+                          <div class="article clearfix">
+                              <span class="article-title">人気の投稿</span>
+                              <a href="#" class="article-disc"><span>aaディープラーニング フレームワークChainerを試しながら解説してみる。</span></a>
+                          </div>
+                      </li>
+                      <li class="item">
+                          <div class="contributer clearfix">
+                              <a href="#" class="name">haminiku</a>
+                          </div>
+                          <div class="article clearfix">
+                              <span class="article-title">人気の投稿</span>
+                              <a href="#" class="article-disc"><span>ChaaainerとRNNと機械翻訳</span></a>
+                          </div>
+                      </li>
+                      <li class="item">
+                          <div class="contributer clearfix">
+                              <a href="#" class="name">haminiku</a>
+                          </div>
+                          <div class="article clearfix">
+                              <span class="article-title">人気の投稿</span>
+                              <a href="#" class="article-disc"><span>協調フィルタリaaング型レコメンドエンジン開発のため仕様について考える</span></a>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+              <div class="stuck"></div>
+          </div>
+      </div>
+      <a href="#" class="close"><span>close</span></a>
+  </section>
+</body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="lib/jquery.xdomainajax.js"></script>
+<script src="lib/d3.js"></script>
+<script>
+
+    var svg = d3.select("svg");
+    var width = +svg.attr("width");
+    var height = +svg.attr("height");
+    var transform = d3.zoomIdentity;
+    var zoomedFlag = 0;
+
+    var ilg_esc = function(str) {
+      return str.replace(/[#.+]/g, "_");
+    };
+
+    var simulation = d3.forceSimulation()
+    .force("link", d3.forceLink().id(function(d) {return d.id;}))
+    .force("charge", d3.forceManyBody().strength(-50) )
+    .force("center", d3.forceCenter(1200 / 2 + 50, 800 / 2 - 30));
+
+    var zoomer = d3.zoom()
+    .scaleExtent([0.1, 10])
+    .on("zoom", redraw);
+
+    function redraw() {
+        zoomedFlag = 1;
+        svg_graph_.attr("transform", d3.event.transform);
+    }
+
+    svg.call(zoomer);
+    var svg_graph = svg.append("g")
+    .classed("svg-graph", true);
+    var svg_graph_ = svg_graph.append("svg:g");
+
+    var top_contributor_articles = {};
+
+    d3.json("lib/tops.json", function(error, data) {
+      if (error) throw error;
+      top_contributor_articles = data;
+    });
+
+    var nodes_transition = {};
+    d3.json("lib/data_2012.json", function(error, data) {
+      console.log("2012");
+      nodes_transition["2012"] = data.nodes;
+    });
+    d3.json("lib/data_2013.json", function(error, data) {
+      console.log("2013");
+      nodes_transition["2013"] = data.nodes;
+    });
+    d3.json("lib/data_2014.json", function(error, data) {
+      console.log("2014");
+      nodes_transition["2014"] = data.nodes;
+    });
+    d3.json("lib/data_2015.json", function(error, data) {
+      console.log("2015");
+      nodes_transition["2015"] = data.nodes;
+    });
+    d3.json("lib/data_2016.json", function(error, data) {
+      console.log("2016");
+      nodes_transition["2016"] = data.nodes;
+    });
+
+    d3.json("lib/data_2016.json", function(error, graph) {
+        if (error) throw error;
+
+        var link = svg_graph_.append("g")
+        .attr("class", "links")
+        .selectAll("line")
+        .data(graph.links)
+        .enter().append("line")
+        .attr("class", function(d) {return "link "+ilg_esc(d.target)+" "+ilg_esc(d.source);})
+        .attr("stroke-width", function(d) {return 2;});
+
+        var colors = graph.colors;
+
+        var node = svg_graph_.append("a") .attr("xlink:href", "#modal-one").selectAll("circle").data(graph.nodes).enter().append("g")
+        .attr("class", "node_group")
+        .call(d3.drag()
+        .on("start", dragstarted)
+        .on("drag", dragged)
+        .on("end", dragended));
+
+        svg_graph.selectAll(".node_group").append("circle")
+        .attr("class", function (d) { return ilg_esc(d.id); })
+        .attr("r", function(d) {return Math.sqrt(d.value / 3);})
+        .attr("fill", function(d) {
+            return colors[d.id];
+        })
+        .on("mouseover", function (d) {
+            var element = document.getElementById("body");
+            var hoge = d3.mouse(element);
+
+            d3.selectAll(".text-box .title")
+            .text(d.id);
+            d3.selectAll(".text-box .disc-lang")
+            .text("loading...");
+
+            reqWikiDescription(d.id);
+
+            d3.selectAll(".text-box")
+            .classed("hide", false)
+            .classed("show", true)
+            .style("left", hoge[0] + "px")
+            .style("top", hoge[1] + "px");
+
+            tag = d.id;
+            // console.log(tag);
+            $("#modal-one .disc-title").html('<a href="http://qiita.com/tags/'+tag+'" class="disc-title" target=_blank>'+tag+'</a>');
+            getTopContributorArticles(tag);
+        })
+        .on("mouseout", function () {
+            d3.selectAll(".text-box")
+            .classed("show", false)
+            .classed("hide", true);
+        });
+
+        svg_graph.selectAll(".node_group").append("text")
+        .attr("class", function(d) {return ilg_esc(d.id);})
+        .attr("stroke", "none")
+        .attr("fill", "#333")
+        .style("font-size", function (d) {
+            if (Math.sqrt(d.value / 2000) < 1.0) {
+                return Math.sqrt(d.value / 2000) + "rem";
+            } else {
+                return Math.sqrt(d.value / 2000) + "rem";
+            }
+        })
+        .call(d3.drag()
+        .on("start", dragstarted)
+        .on("drag", dragged)
+        .on("end", dragended))
+        .style("text-anchor", "middle")
+        .style("dominant-baseline", "central")
+        .style("pointer-events", "none")
+        .classed("hide", function (d) {
+            if (d.value < 1000) {
+                return false;
+            } else {
+                return false;
+            }
+        })
+        .text(function (d) {
+            return d.id;
+        });
+
+        simulation
+        .nodes(graph.nodes)
+        .on("tick", ticked)
+        .force("node", d3.forceCollide(function(d) {return Math.sqrt(d.value/1.5);}));
+
+        var max_dist = Math.max.apply(null, graph.links.map(function(d){return d.value;}));
+        var node_dist_scale = d3.scaleLinear()
+        .domain([0, max_dist])
+        .range([120, 0]);
+        simulation.force("link")
+        .links(graph.links);
+
+        function ticked() {
+            var bairitu = 1.0;
+            link
+            .attr("x1", function(d) { return d.source.x * bairitu; })
+            .attr("y1", function(d) { return d.source.y * bairitu; })
+            .attr("x2", function(d) { return d.target.x * bairitu; })
+            .attr("y2", function(d) { return d.target.y * bairitu; });
+
+            node
+            .selectAll("circle")
+            .attr("cx", function(d) { return d.x * bairitu; })
+            .attr("cy", function(d) { return d.y * bairitu; });
+
+            node
+            .selectAll("text")
+            .attr("x", function(d) { return d.x * bairitu; })
+            .attr("y", function(d) { return d.y * bairitu; });
+        }
+    });
+
+    var updateYear = function(year_, dir) {
+        console.log("update!");
+        if (year_ == 2016) {
+            $(".main .graph .year").html('<a href="javascript:void(0);" onclick="OnLeftClick();"><i class="fa fa-caret-left" aria-hidden="true"></i></a> '+year_+' <a href="javascript:void(0);" onclick="OnRightClick();"><i class="fa fa-caret-right hide_arrow" aria-hidden="true"></i></a>');
+        } else if (year_ == 2012) {
+            $(".main .graph .year").html('<a href="javascript:void(0);" onclick="OnLeftClick();"><i class="fa fa-caret-left hide_arrow" aria-hidden="true"></i></a> '+year_+' <a href="javascript:void(0);" onclick="OnRightClick();"><i class="fa fa-caret-right" aria-hidden="true"></i></a>');
+        } else {
+            $(".main .graph .year").html('<a href="javascript:void(0);" onclick="OnLeftClick();"><i class="fa fa-caret-left" aria-hidden="true"></i></a> '+year_+' <a href="javascript:void(0);" onclick="OnRightClick();"><i class="fa fa-caret-right" aria-hidden="true"></i></a>');
+        }
+        nodes = nodes_transition[""+year_];
+        nodes.forEach(function(d) {
+            cls = "."+ilg_esc(d.id);
+            try {
+                if (d.value >= 5) {
+                    if (svg_graph.selectAll(".node_group").selectAll("text"+cls).text() === "") {
+                        svg_graph_.selectAll(".links").selectAll(cls).transition().duration(500)
+                        .attr("stroke-width", 2);
+                        svg_graph.selectAll(".node_group").selectAll("text"+cls).transition().delay(250)
+                        .text(d.id);
+                    }
+                }
+                svg_graph.selectAll(".node_group").selectAll("circle"+cls).transition().duration(500)
+                .attr("r", Math.sqrt(d.value / 3));
+            } catch(e) {
+                console.log("error!", cls, e);
+            }
+        });
+        nodes.forEach(function(d) {
+            cls = "."+ilg_esc(d.id);
+            try {
+                if (d.value < 5) {
+                    svg_graph.selectAll(".links").selectAll(cls).transition().duration(500).attr("stroke-width", 0);
+                    svg_graph.selectAll(".node_group").selectAll("text"+cls).transition().delay(250)
+                    .text("");
+                }
+            } catch(e) {
+                console.log("error!", cls, e);
+            }
+        });
+    };
+    var current_year = 2016;
+    d3.select("body").on("keydown", function() {
+        if (d3.event.keyCode == 37 && current_year > 2012) {
+            current_year -= 1;
+            updateYear(""+current_year, -1);
+        } else if (d3.event.keyCode == 39 && current_year < 2016) {
+            current_year += 1;
+            updateYear(""+current_year, 1);
+        }
+    });
+    function OnLeftClick() {
+        if (current_year > 2012) {
+            current_year -= 1;
+            updateYear(""+current_year, -1);
+        }
+    }
+    function OnRightClick() {
+        if (current_year < 2016) {
+            current_year += 1;
+            updateYear(""+current_year, 1);
+        }
+    }
+
+    function dragstarted(d) {
+        if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+    }
+
+    function dragged(d) {
+        d.fx = d3.event.x;
+        d.fy = d3.event.y;
+    }
+
+    function dragended(d) {
+        if (!d3.event.active) simulation.alphaTarget(0);
+        d.fx = null;
+        d.fy = null;
+    }
+
+  var getTopContributorArticles = function(tag) {
+      $(".disc .contribute .ranking .item .name").html('loading...');
+      $(".disc .contribute .ranking .item .article-disc span").html('loading...');
+    
+      tops = top_contributor_articles[tag];
+
+      $(".disc .contribute .ranking .item").each(function(i) {
+      $(".contributer", this).html('<a href="http://qiita.com/'+tops[i]["user"]+'" class="name" target=_blank>'+tops[i]["user"]+'</a>');
+          article = $($.parseHTML(tops[i]["article"]))
+          // console.log(article.text());
+          if (article.text() == "") {
+              console.log("undefined!");
+              $(".article", this).html('<span class="article-title">人気の投稿</span><a href="#" class="article-disc"><span>'+'This users article of this tag was not found.'+'</span></a>');
+          } else {
+              $(".article", this).html('<span class="article-title">人気の投稿</span><a href="'+$(article).attr("href")+'" class="article-disc" target=_blank><span>'+article.text()+'</span></a>');
+          }
+      });
+  };
+
+    var reqWikiDescription = function(word) {
+        $.ajax({
+            url: 'https://ja.wikipedia.org/w/api.php',
+            type: 'get', // getかpostを指定(デフォルトは前者)
+            dataType: 'jsonp', // 「json」を指定するとresponseがJSONとしてパースされたオブジェクトになる
+            data: { // 送信データを指定(getの場合は自動的にurlの後ろにクエリとして付加される)
+                format : 'json',
+                action : 'query',
+                prop   : 'extracts',
+                exintro: '',
+                explaintext: '',
+                titles : word
+            }
+        })
+        // ・ステータスコードは正常で、dataTypeで定義したようにパース出来たとき
+        .done(function (response) {
+            var query = response.query;
+            if (query && query.pages) {
+                for (var p in query.pages) {
+                    var content = query.pages[p].extract;
+                    if (content) {
+                        var period_index = content.search("。");
+                        d3.selectAll(".text-box .disc-lang")
+                        .text(content.slice(0, period_index+1));
+                        return content;
+                    } else {
+                        d3.selectAll(".text-box .disc-lang")
+                        .text("Not found");
+                        return "Not found"
+                    }
+                }
+            }
+        })
+        // ・サーバからステータスコード400以上が返ってきたとき
+        // ・ステータスコードは正常だが、dataTypeで定義したようにパース出来なかったとき
+        // ・通信に失敗したとき
+        .fail(function () {
+            console.log("failed");
+        });
+    };
+
+</script>
+</html>

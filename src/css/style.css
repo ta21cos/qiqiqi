@@ -1,0 +1,447 @@
+@charset "UTF-8";
+
+/*##############################*/
+/*html*/
+/*##############################*/
+
+html {
+    font-size: 62.5%;
+}
+
+/*##############################*/
+/* common */
+/*##############################*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.hide {
+    display: none;
+}
+.main .year .hide_arrow{
+    color: #FFF;
+}
+.show {
+    display: block;
+}
+
+/*##############################*/
+/* body */
+/*##############################*/
+
+body {
+    height: 100%;
+    position: relative;
+    padding: 30px;
+    background-color: #333333;
+    color: #333;
+    text-align: left;
+    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+html {
+    height: 100%;
+}
+
+/*##############################*/
+/* graph */
+/*##############################*/
+
+.main {
+    height: 100%;
+}
+.main .year {
+    padding: 10px;
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+    font-size: 6rem;
+    font-weight: 300;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.main .year i {
+    font-size: 5rem;
+    font-weight: normal;
+    color: gray;
+}
+.graph {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.graph svg {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.text-box {
+    position: absolute;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.text-box .title {
+    font-weight: normal;
+}
+.text-box .disc-lang {
+    max-width: 400px;
+    overflow: hidden;
+    word-wrap: break-word;
+    font-size: 1.2rem;
+}
+
+.links line {
+    stroke: #999;
+    stroke-opacity: 0.6;
+}
+.nodes circle {
+    stroke: #fff;
+    stroke-width: 2px;
+}
+
+.legend-list {
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
+.legend-list li {
+    list-style: none;
+}
+.legend-list .sikaku-1 {
+    margin-top: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #FFE74C;
+}
+.legend-list .sikaku-2 {
+    margin-top: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #FF5964;
+}
+.legend-list .sikaku-3 {
+    margin-top: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #6BF178;
+}
+.legend-list .sikaku-4 {
+    margin-top: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #35A7FF;
+}
+.legend-list .sikaku-5 {
+    margin-top: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #DBDBDB;
+}
+.legend-list .legend {
+    list-style: none;
+    padding: 8px 8px 18px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 1.4rem;
+    vertical-align: middle;
+}
+
+/*##############################*/
+/* disc */
+/*##############################*/
+
+.disc {
+    width: 100%;
+    margin: auto;
+    padding: 32px;
+    background-color: #F2F2F2;
+    border-radius: 3px;
+}
+.disc .disc-title {
+    padding: 0;
+    font-size: 4.0rem;
+    text-align: center;
+    font-weight: normal;
+    color: #333;
+}
+.disc .disc-title a {
+    padding: 16px;
+    border-radius: 5px;
+}
+.disc .disc-title a:hover {
+    background-color: rgba(255, 225, 65, 0.5);
+}
+.disc .disc-title a {
+    padding: 0;
+    font-size: 4.0rem;
+    text-align: center;
+    font-weight: normal;
+    color: black;
+}
+.disc .disc-title a:hover {
+    padding: 0;
+    font-size: 4.0rem;
+    text-align: center;
+    font-weight: normal;
+    color: gray;
+}
+.disc .title {
+    padding: 4px 8px 8px 8px;
+    font-size: 2.0rem;
+    font-weight: normal;
+}
+
+.disc li {
+    position: relative;
+    padding: 4px 18px 4px 18px;
+    width: 100%;
+    margin-bottom: 12px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    list-style: none;
+}
+.disc li:first-child::before,
+.disc li:nth-child(2)::before,
+.disc li:nth-child(3)::before {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #fb0;
+    content: "";
+}
+.disc li:first-child::after,
+.disc li:nth-child(2)::after,
+.disc li:nth-child(3)::after {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border: 10px solid #fb0;
+    border-top: 6px solid transparent;
+    border-bottom: 10px solid #f90;
+    content: "";
+}
+
+.disc li:nth-child(2)::before {
+    border-bottom: 10px solid #ccc;
+}
+.disc li:nth-child(2)::after {
+    border: 10px solid #ccc;
+    border-top: 6px solid transparent;
+    border-bottom: 10px solid #aaa;
+}
+
+.disc li:nth-child(3)::before {
+    border-bottom: 10px solid #d98;
+}
+.disc li:nth-child(3)::after{
+    border: 10px solid #d98;
+    border-top: 6px solid transparent;
+    border-bottom: 10px solid #c76;
+}
+
+.disc .item {
+
+}
+.disc .contributer {
+    padding-bottom: 4px;
+    border-bottom: 1px solid #333;
+}
+.disc .contribute .contributer .image {
+    width: 50px;
+    height: auto;
+    float: left;
+}
+.disc .contribute .contributer .name {
+    padding-top: 10px;
+    padding-left: 30px;
+    font-size: 2.0rem;
+    display: block;
+    float: left;
+    color: #333;
+    border-radius: 3px;
+}
+.disc .contribute .contributer .name:hover {
+    background-color: rgba(255, 225, 65, 0.5);
+}
+
+.disc .contribute .article {
+    padding: 8px 0 4px 0;
+}
+.disc .contribute .article-title {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 12%;
+    padding: 4px;
+    margin-top: 6px;
+    border-radius: 3px;
+    border: 1px solid #cc7766;
+    font-size: 1.2rem;
+}
+.disc .contribute .article-disc {
+    display: block;
+    float: right;
+    overflow: hidden;
+    width: 87%;
+    padding: 8px;
+    color: #333333;
+    border-radius: 3px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+.disc .contribute .article-disc:hover {
+    background-color: rgba(255, 225, 65, 0.5);
+}
+
+
+/*##############################*/
+/* modalwin button */
+/*##############################*/
+
+.md-btn-area {
+    margin-bottom:50px;
+}
+.md-btn {
+    margin: 5px;
+    padding: 20px;
+    background-color: #e58e54;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.md-btn:hover {
+    background-color: #ffbb00;
+}
+
+/*##############################*/
+/* modalwin */
+/*##############################*/
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgba(95, 95, 95, 0.8);
+    -webkit-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    z-index: 5;
+}
+
+.modal-inner {
+    width: 58%;
+    height: auto;
+    margin: 60px auto auto;
+    padding:20px;
+    border-radius: 3px;
+    background-color: #fff;
+    z-index:100;
+}
+.modal-inner .ranking{
+    z-index: 120;
+}
+
+/*##############################*/
+/* modalwin close */
+/*##############################*/
+
+.modal .close {
+    display:block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index:-1;
+}
+.modal .close span {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255,255,255,.2);
+    cursor:pointer;
+}
+.modal .close span {
+    text-indent: -9999px;
+}
+.modal .close span:before,
+.modal .close span:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    border: 2px solid #cc3935;
+    height: 40px;
+}
+.modal .close span:before {
+    left: 23px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.modal .close span:after {
+    right: 23px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*##############################*/
+/* Append modal(target id) */
+/*##############################*/
+
+#modal-one:target {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.start {
+    position: fixed;
+    top: 45%;
+    left: 43%;
+    display: block;
+    padding: 24px;
+    margin: auto;
+    border-radius: 10px;
+    color: #333333;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
